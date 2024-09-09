@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ScrumdingerKMMLib
 
 struct ThemeView: View {
     let theme: Theme
@@ -13,9 +14,9 @@ struct ThemeView: View {
         Text(theme.name)
             .padding(4)
             .frame(maxWidth: .infinity)
-            .background(theme.mainColor)
+            .background(theme.colorName.toThemeColor)
             .clipShape(RoundedRectangle(cornerRadius: 4))
-            .foregroundColor(theme.accentColor)
+            .foregroundColor(theme.accentColor.toThemeColor)
     }
 }
 

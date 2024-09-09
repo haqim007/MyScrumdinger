@@ -7,9 +7,11 @@
 
 import SwiftUI
 import AVFoundation
+import ScrumdingerKMMLib
 
 struct MeetingView: View {
-    @Binding var scrum: DailyScrum
+    let scrum: DailyScrum
+    @StateObject private var viewModel: ViewModel = .init()
     @StateObject var scrumTimer = ScrumTimer()
     @StateObject var speechRecognizer = SpeechRecognizer()
     @State private var isRecording = false
@@ -19,24 +21,22 @@ struct MeetingView: View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16.0)
-                .fill(scrum.theme.mainColor)
+            .fill(scrum.themeString.toThemeColor)
             VStack {
                 MeetingViewHeader(
                     secondsElapsed: scrumTimer.secondsElapsed,
-                    secondsRemaining: scrumTimer.secondsRemaining,
-                    theme: scrum.theme
+                    secondsRemaining: scrumTimer.secondsRemaining
                 )
                 
                 Spacer()
-                MeetingTimerView(speakers: scrumTimer.speakers, isRecording: isRecording, theme: scrum.theme)
+                MeetingTimerView(speakers: scrumTimer.speakers, isRecording: isRecording, theme: scrum.themeString.toThemeColor, accentColor: scrum.accentColor.toThemeColor)
                 Spacer()
                 MeetingViewFooter(speakers: scrumTimer.speakers, skipAction: scrumTimer.skipSpeaker)
             }
             .padding()
-            .foregroundStyle(scrum.theme.accentColor)
+            .foregroundStyle(scrum.accentColor.toThemeColor)
             .onAppear {
                startScrum()
-                
             }
             .onDisappear {
                 endScrum()
@@ -46,7 +46,7 @@ struct MeetingView: View {
     }
     
     private func startScrum() {
-        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.reset(lengthInMinutes: Int(scrum.lengthInMinutes), attendees: scrum.attendees)
         scrumTimer.speakerChangedAction = {
            player.seek(to: .zero)
            player.play()
@@ -59,24 +59,56 @@ struct MeetingView: View {
    }
     
     private func endScrum() {
+        viewModel.addHistory(
+            scrumId: scrum.id,
+            dateTimeUTC: Date().toISO8601String(),
+            attendees: scrum.attendees,
+            transcript: speechRecognizer.transcript
+        )
         scrumTimer.stopScrum()
         speechRecognizer.stopTranscribing()
         isRecording = false
-        let newHistory = History(attendees: scrum.attendees,
-                                 transcript: speechRecognizer.transcript)
-        scrum.history.insert(newHistory, at: 0)
     }
 }
 
 #Preview {
-    MeetingView(scrum: .constant(DailyScrum.sampleData[0]))
+    MeetingView(scrum: sampleData()[0])
+}
+
+
+extension MeetingView{
+    
+    @MainActor
+    class ViewModel: ObservableObject{
+        private let addHistoryUseCase = AddDailyScrumHistoryUseCase()
+        @Published var result: Resource = .idle
+        @Published var scrum = DailyScrum.companion.emptyScrum
+        
+        func addHistory(scrumId: Int64, dateTimeUTC: String, attendees: [DailyScrum.Attendee], transcript: String) {
+            Task{
+                do{
+                    self.result = .loading
+                    try await addHistoryUseCase.invoke(
+                        transcript: transcript,
+                        attendees: attendees,
+                        dateTimeUTC: dateTimeUTC,
+                        scrumId: scrumId
+                    )
+                    self.result = .success
+                } catch {
+                    self.result = .error(message: error.localizedDescription)
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        
+    }
 }
 
 struct MeetingViewHeader: View {
     
     let secondsElapsed: Int
     let secondsRemaining: Int
-    let theme: Theme
     
     private var totalSeconds: Int {
         secondsElapsed + secondsRemaining
@@ -94,6 +126,7 @@ struct MeetingViewHeader: View {
             ProgressView(value: progress)
             HStack{
                 VStack(alignment: .leading) {
+                  Text(SharedRes.strings().speaker_seconds_elapsed)
                     Text("Seconds Elapsed")
                         .font(.caption)
                     Label("\(secondsElapsed)", systemImage: "hourglass.tophalf.fill")
@@ -115,7 +148,7 @@ struct MeetingViewHeader: View {
 }
 
 struct MeetingViewFooter: View {
-    let speakers: [ScrumTimer.Speaker]
+    let speakers: [Speaker]
     var skipAction: ()->Void
     
     private var speakerNumber: Int? {

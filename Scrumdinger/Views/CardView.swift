@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ScrumdingerKMMLib
 
 struct CardView: View {
     let scrum: DailyScrum
@@ -27,15 +28,15 @@ struct CardView: View {
             .font(.caption)
         }
         .padding()
-        .foregroundColor(scrum.theme.accentColor)
+        .foregroundColor(scrum.accentColor.toThemeColor)
     }
 }
 
 struct CardView_Previews: PreviewProvider {
-    static var scrum = DailyScrum.sampleData[0]
+    static var scrum = DailyScrum.companion.sampleData[1]
     static var previews: some View {
         CardView(scrum: scrum)
-            .background(scrum.theme.mainColor)
+        .background(scrum.themeString.toThemeColor)
             .previewLayout(.fixed(width: 400, height: 60))
     }
 }

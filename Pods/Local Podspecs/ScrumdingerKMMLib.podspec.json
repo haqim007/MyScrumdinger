@@ -1,0 +1,16 @@
+{
+  "name": "ScrumdingerKMMLib",
+  "version": "1.1.0",
+  "homepage": "https://github.com/haqim007",
+  "source": {
+    "http": ""
+  },
+  "authors": "",
+  "license": "",
+  "summary": "Scrumdinger KMM Library",
+  "vendored_frameworks": "ScrumdingerKMMLib.xcframework",
+  "libraries": "c++",
+  "platforms": {
+    "ios": "15.0"
+  }
+}

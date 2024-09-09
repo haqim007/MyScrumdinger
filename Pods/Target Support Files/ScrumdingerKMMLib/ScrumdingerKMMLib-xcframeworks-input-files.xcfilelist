@@ -1,0 +1,2 @@
+${PODS_ROOT}/Target Support Files/ScrumdingerKMMLib/ScrumdingerKMMLib-xcframeworks.sh
+${PODS_ROOT}/../../../kmm/ScrumdingerKMMLib/shared/build/cocoapods/publish/release/ScrumdingerKMMLib.xcframework

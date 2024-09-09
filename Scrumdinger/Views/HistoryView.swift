@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import ScrumdingerKMMLib
 
 
 struct HistoryView: View {
-    let history: History
+    let history: IHistory
 
 
     var body: some View {
@@ -19,7 +20,7 @@ struct HistoryView: View {
                     .padding(.bottom)
                 Text("Attendees")
                     .font(.headline)
-                Text(history.attendeeString)
+                Text(history.attendees.toString)
                 if let transcript = history.transcript {
                     Text("Transcript")
                         .font(.headline)
@@ -28,30 +29,42 @@ struct HistoryView: View {
                 }
             }
         }
-        .navigationTitle(Text(history.date, style: .date))
+        .navigationTitle(Text(Date(from: history.dateTimeUTC), style: .date))
         .padding()
     }
 }
 
 
-extension History {
-    var attendeeString: String {
-        ListFormatter.localizedString(byJoining: attendees.map { $0.name })
+extension Array where Element == DailyScrum.Attendee {
+    var toString: String {
+        ListFormatter.localizedString(byJoining: self.map { $0.name })
     }
 }
 
 
 struct HistoryView_Previews: PreviewProvider {
-    static var history: History {
-        History(attendees: [
-            DailyScrum.Attendee(name: "Jon"),
-            DailyScrum.Attendee(name: "Darla"),
-            DailyScrum.Attendee(name: "Luis"),
-        ],
-                transcript: "Darla, would you like to start today? Sure, yesterday I reviewed Luis' PR and met with the design team to finalize the UI...")
-    }
     
     static var previews: some View {
-        HistoryView(history: history)
+        HistoryView(
+            history: History(
+                id: generateUniqueId(),
+                dateTimeUTC: Date().toISO8601String(),
+                attendees: [
+                    DailyScrum.Attendee(
+                        id: generateUniqueId(salt: 1),
+                        name: "Jon"
+                    ),
+                    DailyScrum.Attendee(
+                        id: generateUniqueId(salt: 2),
+                        name: "Darla"
+                    ),
+                    DailyScrum.Attendee(
+                        id: generateUniqueId(salt: 3),
+                        name: "Luis"
+                    ),
+                ],
+                transcript: "Darla, would you like to start today? Sure, yesterday I reviewed Luis' PR and met with the design team to finalize the UI..."
+            )
+        )
     }
 }

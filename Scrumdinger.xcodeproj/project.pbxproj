@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A6665DA09C6575DF7160CF1 /* Pods_ScrumdingerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AB28E77CC575D1A76AF032 /* Pods_ScrumdingerTests.framework */; };
+		2DD2BE4B93A31321FD4E955E /* Pods_Scrumdinger_ScrumdingerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6D1A338D365C937C6C0F96 /* Pods_Scrumdinger_ScrumdingerUITests.framework */; };
+		7C1BEB942C87FD7700145790 /* Views+Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1BEB932C87FD7700145790 /* Views+Env.swift */; };
+		7C92CF222C72DA18008FDC16 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C92CF212C72DA18008FDC16 /* Resource.swift */; };
+		7CB1D6C02C8814EB007A587C /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1D6BF2C8814EB007A587C /* Dummy.swift */; };
+		7CD0E1442C6EDA6700300FE4 /* Date+Scrumdinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD0E1432C6EDA6700300FE4 /* Date+Scrumdinger.swift */; };
 		7CD403382C61E19100AF69E9 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD403372C61E19100AF69E9 /* ScrumTimer.swift */; };
 		7CD4033F2C6204AC00AF69E9 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD4033E2C6204AC00AF69E9 /* NewScrumSheet.swift */; };
 		7CD403412C62050500AF69E9 /* EditScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD403402C62050500AF69E9 /* EditScrumSheet.swift */; };
@@ -36,6 +42,8 @@
 		7CE3F2412C61C95D009D3748 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2402C61C95D009D3748 /* DetailEditView.swift */; };
 		7CE3F2442C61D6F1009D3748 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2432C61D6F1009D3748 /* ThemeView.swift */; };
 		7CE3F2462C61D79A009D3748 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2452C61D79A009D3748 /* ThemePicker.swift */; };
+		7CEBAFE92C8760F1004AA198 /* NSArray+Scrumdinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEBAFE82C8760F1004AA198 /* NSArray+Scrumdinger.swift */; };
+		BACA2F89788AAF5B96D62B86 /* Pods_Scrumdinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB2C3142B601E5948960B84 /* Pods_Scrumdinger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D48B83F7CA9E982D9756A67 /* Pods-ScrumdingerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumdingerTests.release.xcconfig"; path = "Target Support Files/Pods-ScrumdingerTests/Pods-ScrumdingerTests.release.xcconfig"; sourceTree = "<group>"; };
+		1DB2C3142B601E5948960B84 /* Pods_Scrumdinger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scrumdinger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2555A88197BE68154CB96492 /* Pods-Scrumdinger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger.debug.xcconfig"; path = "Target Support Files/Pods-Scrumdinger/Pods-Scrumdinger.debug.xcconfig"; sourceTree = "<group>"; };
+		5E6D1A338D365C937C6C0F96 /* Pods_Scrumdinger_ScrumdingerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scrumdinger_ScrumdingerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72403ACA7C90439D4D2188F5 /* Pods-ScrumdingerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumdingerTests.debug.xcconfig"; path = "Target Support Files/Pods-ScrumdingerTests/Pods-ScrumdingerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		784F93C17BC660681781BB23 /* Pods-Scrumdinger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger.release.xcconfig"; path = "Target Support Files/Pods-Scrumdinger/Pods-Scrumdinger.release.xcconfig"; sourceTree = "<group>"; };
+		7C18E4272C8D638E00EC7C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7C1BEB932C87FD7700145790 /* Views+Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views+Env.swift"; sourceTree = "<group>"; };
+		7C92CF212C72DA18008FDC16 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		7CB1D6BF2C8814EB007A587C /* Dummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dummy.swift; sourceTree = "<group>"; };
+		7CD0E1432C6EDA6700300FE4 /* Date+Scrumdinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Scrumdinger.swift"; sourceTree = "<group>"; };
 		7CD403372C61E19100AF69E9 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		7CD4033E2C6204AC00AF69E9 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		7CD403402C62050500AF69E9 /* EditScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScrumSheet.swift; sourceTree = "<group>"; };
@@ -88,6 +107,10 @@
 		7CE3F2402C61C95D009D3748 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		7CE3F2432C61D6F1009D3748 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		7CE3F2452C61D79A009D3748 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		7CEBAFE82C8760F1004AA198 /* NSArray+Scrumdinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+Scrumdinger.swift"; sourceTree = "<group>"; };
+		941258EF64D65050389CB878 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig"; path = "Target Support Files/Pods-Scrumdinger-ScrumdingerUITests/Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F5AB28E77CC575D1A76AF032 /* Pods_ScrumdingerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrumdingerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4381453138E12DDCBFCEE0 /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scrumdinger-ScrumdingerUITests/Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BACA2F89788AAF5B96D62B86 /* Pods_Scrumdinger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6665DA09C6575DF7160CF1 /* Pods_ScrumdingerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,12 +134,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD2BE4B93A31321FD4E955E /* Pods_Scrumdinger_ScrumdingerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C1BEB922C87FD6900145790 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				7C1BEB932C87FD7700145790 /* Views+Env.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		7C92CF202C72DA07008FDC16 /* Mechanism */ = {
+			isa = PBXGroup;
+			children = (
+				7C92CF212C72DA18008FDC16 /* Resource.swift */,
+			);
+			path = Mechanism;
+			sourceTree = "<group>";
+		};
 		7CD7CA2A2C65AB4E00E6C5C0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +172,8 @@
 				7CE3F2192C60CCA9009D3748 /* ScrumdingerTests */,
 				7CE3F2232C60CCA9009D3748 /* ScrumdingerUITests */,
 				7CE3F2072C60CCA8009D3748 /* Products */,
+				EAF3EF36A250584840D93B68 /* Pods */,
+				F8BA8FD66A4481113B6B7F40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,7 +190,9 @@
 		7CE3F2082C60CCA8009D3748 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				7C18E4272C8D638E00EC7C41 /* Info.plist */,
 				7CD7CA2A2C65AB4E00E6C5C0 /* Resources */,
+				7C92CF202C72DA07008FDC16 /* Mechanism */,
 				7CE3F2332C61AB81009D3748 /* Models */,
 				7CE3F2422C61D6D1009D3748 /* Views */,
 				7CE3F20D2C60CCA9009D3748 /* Assets.xcassets */,
@@ -191,6 +237,9 @@
 				7CD403442C620FCA00AF69E9 /* ScrumStore.swift */,
 				7CD403462C6212B200AF69E9 /* ErrorWrapper.swift */,
 				7CD4034E2C6222BA00AF69E9 /* SpeechRecognizer.swift */,
+				7CD0E1432C6EDA6700300FE4 /* Date+Scrumdinger.swift */,
+				7CEBAFE82C8760F1004AA198 /* NSArray+Scrumdinger.swift */,
+				7CB1D6BF2C8814EB007A587C /* Dummy.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +247,7 @@
 		7CE3F2422C61D6D1009D3748 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7C1BEB922C87FD6900145790 /* util */,
 				7CD4034C2C621FAF00AF69E9 /* SpeakerArc.swift */,
 				7CE3F23A2C61BCD0009D3748 /* TrailingIconLabelStyle.swift */,
 				7CE3F2092C60CCA8009D3748 /* ScrumdingerApp.swift */,
@@ -217,6 +267,29 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EAF3EF36A250584840D93B68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2555A88197BE68154CB96492 /* Pods-Scrumdinger.debug.xcconfig */,
+				784F93C17BC660681781BB23 /* Pods-Scrumdinger.release.xcconfig */,
+				FA4381453138E12DDCBFCEE0 /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */,
+				941258EF64D65050389CB878 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */,
+				72403ACA7C90439D4D2188F5 /* Pods-ScrumdingerTests.debug.xcconfig */,
+				1D48B83F7CA9E982D9756A67 /* Pods-ScrumdingerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F8BA8FD66A4481113B6B7F40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DB2C3142B601E5948960B84 /* Pods_Scrumdinger.framework */,
+				5E6D1A338D365C937C6C0F96 /* Pods_Scrumdinger_ScrumdingerUITests.framework */,
+				F5AB28E77CC575D1A76AF032 /* Pods_ScrumdingerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -224,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CE3F22A2C60CCA9009D3748 /* Build configuration list for PBXNativeTarget "Scrumdinger" */;
 			buildPhases = (
+				8D3C46C802189A7F254D97E0 /* [CP] Check Pods Manifest.lock */,
 				7CE3F2022C60CCA8009D3748 /* Sources */,
 				7CE3F2032C60CCA8009D3748 /* Frameworks */,
 				7CE3F2042C60CCA8009D3748 /* Resources */,
@@ -241,6 +315,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CE3F22D2C60CCA9009D3748 /* Build configuration list for PBXNativeTarget "ScrumdingerTests" */;
 			buildPhases = (
+				664A32044ABF62FDD81F5362 /* [CP] Check Pods Manifest.lock */,
 				7CE3F2122C60CCA9009D3748 /* Sources */,
 				7CE3F2132C60CCA9009D3748 /* Frameworks */,
 				7CE3F2142C60CCA9009D3748 /* Resources */,
@@ -259,6 +334,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CE3F2302C60CCA9009D3748 /* Build configuration list for PBXNativeTarget "ScrumdingerUITests" */;
 			buildPhases = (
+				59260B4E7540BEFC637AAB96 /* [CP] Check Pods Manifest.lock */,
 				7CE3F21C2C60CCA9009D3748 /* Sources */,
 				7CE3F21D2C60CCA9009D3748 /* Frameworks */,
 				7CE3F21E2C60CCA9009D3748 /* Resources */,
@@ -343,6 +419,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59260B4E7540BEFC637AAB96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scrumdinger-ScrumdingerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		664A32044ABF62FDD81F5362 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrumdingerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D3C46C802189A7F254D97E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scrumdinger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CE3F2022C60CCA8009D3748 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -353,6 +498,7 @@
 				7CD4034B2C621F5400AF69E9 /* MeetingTimerView.swift in Sources */,
 				7CD403492C62134300AF69E9 /* ErrorView.swift in Sources */,
 				7CE3F2372C61ABE0009D3748 /* DailyScrum.swift in Sources */,
+				7CD0E1442C6EDA6700300FE4 /* Date+Scrumdinger.swift in Sources */,
 				7CE3F23F2C61C59C009D3748 /* DetailView.swift in Sources */,
 				7CD403512C62241100AF69E9 /* HistoryView.swift in Sources */,
 				7CE3F2412C61C95D009D3748 /* DetailEditView.swift in Sources */,
@@ -365,7 +511,11 @@
 				7CE3F20C2C60CCA8009D3748 /* MeetingView.swift in Sources */,
 				7CD403432C62068C00AF69E9 /* History.swift in Sources */,
 				7CD7CA252C65AB0C00E6C5C0 /* AVPlayer+Ding.swift in Sources */,
+				7CEBAFE92C8760F1004AA198 /* NSArray+Scrumdinger.swift in Sources */,
+				7C92CF222C72DA18008FDC16 /* Resource.swift in Sources */,
+				7C1BEB942C87FD7700145790 /* Views+Env.swift in Sources */,
 				7CD403472C6212B200AF69E9 /* ErrorWrapper.swift in Sources */,
+				7CB1D6C02C8814EB007A587C /* Dummy.swift in Sources */,
 				7CE3F20A2C60CCA8009D3748 /* ScrumdingerApp.swift in Sources */,
 				7CE3F2442C61D6F1009D3748 /* ThemeView.swift in Sources */,
 				7CE3F2392C61B430009D3748 /* CardView.swift in Sources */,
@@ -528,6 +678,7 @@
 		};
 		7CE3F22B2C60CCA9009D3748 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2555A88197BE68154CB96492 /* Pods-Scrumdinger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -537,6 +688,7 @@
 				DEVELOPMENT_TEAM = K2H8KG8Z32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -549,6 +701,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-framework",
+					"\"ScrumdingerKMMLib\"",
+					"-lsqlite3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.haqim.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -559,6 +719,7 @@
 		};
 		7CE3F22C2C60CCA9009D3748 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 784F93C17BC660681781BB23 /* Pods-Scrumdinger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -568,6 +729,7 @@
 				DEVELOPMENT_TEAM = K2H8KG8Z32;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
 				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -580,6 +742,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-framework",
+					"\"ScrumdingerKMMLib\"",
+					"-lsqlite3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.haqim.Scrumdinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -590,6 +760,7 @@
 		};
 		7CE3F22E2C60CCA9009D3748 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72403ACA7C90439D4D2188F5 /* Pods-ScrumdingerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -610,6 +781,7 @@
 		};
 		7CE3F22F2C60CCA9009D3748 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D48B83F7CA9E982D9756A67 /* Pods-ScrumdingerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -630,6 +802,7 @@
 		};
 		7CE3F2312C60CCA9009D3748 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA4381453138E12DDCBFCEE0 /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -637,6 +810,14 @@
 				DEVELOPMENT_TEAM = K2H8KG8Z32;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-framework",
+					"\"ScrumdingerKMMLib\"",
+					"-lsqlite3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.haqim.ScrumdingerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -648,6 +829,7 @@
 		};
 		7CE3F2322C60CCA9009D3748 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 941258EF64D65050389CB878 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -655,6 +837,14 @@
 				DEVELOPMENT_TEAM = K2H8KG8Z32;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-framework",
+					"\"ScrumdingerKMMLib\"",
+					"-lsqlite3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = dev.haqim.ScrumdingerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;

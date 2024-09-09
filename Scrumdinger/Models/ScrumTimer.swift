@@ -6,29 +6,22 @@
 //
 
 import Foundation
+import ScrumdingerKMMLib
 
-
-extension Array<DailyScrum.Attendee> {
-    var speakers: [ScrumTimer.Speaker] {
-        if isEmpty {
-            return [ScrumTimer.Speaker(name: "Speaker 1", isCompleted: false)]
-        } else {
-            return map { ScrumTimer.Speaker(name: $0.name, isCompleted: false) }
-        }
-    }
+extension Speaker: Identifiable{
+  
+  func makeCopy() -> Speaker{
+      return Speaker(
+        name: self.name,
+        isCompleted: self.isCompleted,
+        id: self.id
+      )
+  }
 }
 
 @MainActor
 final class ScrumTimer: ObservableObject{
-    /// A struct to keep track of meeting attendees during a meeting.
-    struct Speaker: Identifiable {
-        /// The attendee name.
-        let name: String
-        /// True if the attendee has completed their turn to speak.
-        var isCompleted: Bool
-        /// Id for Identifiable conformance.
-        let id = UUID()
-    }
+
     
     /// The name of the meeting attendee who is speaking.
     @Published var activeSpeaker = ""
@@ -37,6 +30,7 @@ final class ScrumTimer: ObservableObject{
     /// The number of seconds until all attendees have had a turn to speak.
     @Published var secondsRemaining = 0
     /// All meeting attendees, listed in the order they will speak.
+    @Published
     private(set) var speakers: [Speaker] = []
 
 
@@ -70,7 +64,7 @@ final class ScrumTimer: ObservableObject{
      */
     init(lengthInMinutes: Int = 0, attendees: [DailyScrum.Attendee] = []) {
         self.lengthInMinutes = lengthInMinutes
-        self.speakers = attendees.speakers
+        self.speakers = DailyScrum.companion.getSpeakers(attendees: attendees)
         secondsRemaining = lengthInSeconds
         activeSpeaker = speakerText
     }
@@ -100,7 +94,9 @@ final class ScrumTimer: ObservableObject{
     private func changeToSpeaker(at index: Int) {
         if index > 0 {
             let previousSpeakerIndex = index - 1
-            speakers[previousSpeakerIndex].isCompleted = true
+            let prevSpeaker = speakers[previousSpeakerIndex].doCopy()
+            prevSpeaker.isCompleted = true
+            speakers[previousSpeakerIndex] = prevSpeaker
         }
         secondsElapsedForSpeaker = 0
         guard index < speakers.count else { return }
@@ -142,7 +138,7 @@ final class ScrumTimer: ObservableObject{
      */
     func reset(lengthInMinutes: Int, attendees: [DailyScrum.Attendee]) {
         self.lengthInMinutes = lengthInMinutes
-        self.speakers = attendees.speakers
+        self.speakers = DailyScrum.companion.getSpeakers(attendees: attendees)
         secondsRemaining = lengthInSeconds
         activeSpeaker = speakerText
     }

@@ -1,0 +1,6 @@
+framework module Pods_ScrumdingerTests {
+  umbrella header "Pods-ScrumdingerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

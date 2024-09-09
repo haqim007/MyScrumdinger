@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import ScrumdingerKMMLib
 
 @MainActor
 class ScrumStore: ObservableObject {
@@ -21,25 +22,16 @@ class ScrumStore: ObservableObject {
     }
     
     func load() async throws {
-        let task = Task<[DailyScrum], Error> {
-            let fileURL = try Self.fileURL()
-            guard let data = try? Data(contentsOf: fileURL) else {
-                return []
-            }
-            let dailyScrums = try JSONDecoder().decode([DailyScrum].self, from: data)
-            return dailyScrums
-        }
-        let scrums = try await task.value
-        self.scrums = scrums
+        self.scrums = DailyScrum.companion.sampleData
     }
     
     func save(scrums: [DailyScrum]) async throws {
-        let task = Task {
-            let data = try JSONEncoder().encode(scrums)
-            let outfile = try Self.fileURL()
-            try data.write(to: outfile)
-        }
-        _ = try await task.value
+//        let task = Task {
+//            let data = try JSONEncoder().encode(scrums)
+//            let outfile = try Self.fileURL()
+//            try data.write(to: outfile)
+//        }
+//        _ = try await task.value
     }
 }
 

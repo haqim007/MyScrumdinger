@@ -6,22 +6,30 @@
 //
 
 import SwiftUI
+import ScrumdingerKMMLib
 
 struct DetailEditView: View {
     @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
+    @State private var lengthInMinutesAsDouble = 0.0
     
     var body: some View {
         Form {
             Section{
                 TextField("Title", text: $scrum.title)
                 HStack {
-                    Slider(value: $scrum.lengthInMinutesAsDouble, in: 5...30, step: 1) {
+                    Slider(value: $lengthInMinutesAsDouble, in: 5...30, step: 1) {
                         Text("Length")
                     }
-                    .accessibilityValue("\(scrum.lengthInMinutes) minutes")
+                    .onAppear{
+                        lengthInMinutesAsDouble = scrum.lengthInMinutesAsDouble
+                    }
+                    .onChange(of: lengthInMinutesAsDouble){old, new in
+                        scrum.lengthInMinutesAsDouble = new
+                    }
+                    .accessibilityValue("\(Int(lengthInMinutesAsDouble)) minutes")
                     Spacer()
-                    Text("\(scrum.lengthInMinutes) minutes")
+                    Text("\(Int(lengthInMinutesAsDouble)) minutes")
                         .accessibilityHidden(true)
                 }
                 ThemePicker(selection: $scrum.theme)
@@ -30,7 +38,7 @@ struct DetailEditView: View {
             }
             
             Section{
-                ForEach(scrum.attendees) { attendee in
+                ForEach(scrum.attendees, id: \.self.id) { attendee in
                     Text(attendee.name)
                 }
                 .onDelete { indices in
@@ -41,7 +49,10 @@ struct DetailEditView: View {
                     TextField("New Attendee", text: $newAttendeeName)
                     Button(action: {
                         withAnimation {
-                            let attendee = DailyScrum.Attendee(name: newAttendeeName)
+                            let attendee = DailyScrum.Attendee(
+                                id: generateUniqueId(),
+                                name: newAttendeeName
+                            )
                             scrum.attendees.append(attendee)
                             newAttendeeName = ""
                         }
@@ -59,5 +70,5 @@ struct DetailEditView: View {
 }
 
 #Preview {
-    DetailEditView(scrum: .constant(.emptyScrum))
+    DetailEditView(scrum: .constant(DailyScrum.companion.emptyScrum))
 }

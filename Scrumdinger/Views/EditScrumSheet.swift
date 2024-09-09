@@ -6,15 +6,18 @@
 //
 
 import SwiftUI
+import ScrumdingerKMMLib
 
 struct EditScrumSheet: View {
-    @Binding var scrum: DailyScrum
-    @State private var editingScrum = DailyScrum.emptyScrum
+    let scrum: DailyScrum
+    @ObservedObject
+    var viewModel: ViewModel
     @Binding var isPresentingEditView: Bool
+    @Environment(\.isPreview) private var isPreview: Bool
     
     var body: some View {
         NavigationStack{
-            DetailEditView(scrum: $editingScrum)
+            DetailEditView(scrum: $viewModel.editingScrum)
                 .navigationTitle(scrum.title)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {
@@ -24,21 +27,56 @@ struct EditScrumSheet: View {
                     }
                     ToolbarItem(placement: .confirmationAction) {
                         Button("Done") {
+                            viewModel.saveScrum()
                             isPresentingEditView = false
-                            scrum = editingScrum
                         }
                     }
                 }
         }
         .onAppear{
-            editingScrum = scrum
+          if !isPreview{
+              viewModel.editingScrum = scrum.makeCopy()
+          }
         }
     }
 }
 
 #Preview {
     EditScrumSheet(
-        scrum: .constant(DailyScrum.sampleData[0]),
+        scrum: sampleData()[0],
+        viewModel: .preview(),
         isPresentingEditView: .constant(true)
     )
+    .environment(\.isPreview, true)
+}
+
+
+extension EditScrumSheet{
+    
+    @MainActor
+    class ViewModel: ObservableObject{
+        private let updateScrumUseCase = UpdateDailyScrumUseCase()
+        @Published var result: Resource = .idle
+        @Published var editingScrum = DailyScrum.companion.emptyScrum
+        
+        func saveScrum() {
+           Task {
+               do {
+                   self.result = .loading
+                   try await updateScrumUseCase.invoke(data: editingScrum)
+                   
+                   print("scrum on save \(editingScrum)")
+                   self.result = .success
+               } catch {
+                   self.result = .error(message: error.localizedDescription)
+               }
+           }
+        }
+        
+        static func preview() -> ViewModel {
+            let viewModel = ViewModel()
+            
+            return viewModel
+        }
+    }
 }
