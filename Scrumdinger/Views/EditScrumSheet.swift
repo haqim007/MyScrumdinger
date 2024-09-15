@@ -21,12 +21,16 @@ struct EditScrumSheet: View {
                 .navigationTitle(scrum.title)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {
-                        Button("Cancel") {
+                        Button(
+                          Strings().get(id: SharedRes.strings().edit_scrum_cancel_btn)
+                        ) {
                             isPresentingEditView = false
                         }
                     }
                     ToolbarItem(placement: .confirmationAction) {
-                        Button("Done") {
+                        Button(
+                          Strings().get(id: SharedRes.strings().edit_scrum_done_btn)
+                        ) {
                             viewModel.saveScrum()
                             isPresentingEditView = false
                         }
@@ -65,7 +69,6 @@ extension EditScrumSheet{
                    self.result = .loading
                    try await updateScrumUseCase.invoke(data: editingScrum)
                    
-                   print("scrum on save \(editingScrum)")
                    self.result = .success
                } catch {
                    self.result = .error(message: error.localizedDescription)

@@ -57,36 +57,36 @@
 
 /* Begin PBXFileReference section */
 		002BA5B86155C1683B1C26C9C0797439 /* Pods-Scrumdinger.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Scrumdinger.modulemap"; sourceTree = "<group>"; };
+		0F7D94AB13299124DABB1CD5A96EF139 /* ScrumdingerKMMLib-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "ScrumdingerKMMLib-xcframeworks.sh"; sourceTree = "<group>"; };
 		1563CB1EF13B36372A844A5825BD8631 /* Pods-Scrumdinger-ScrumdingerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Scrumdinger-ScrumdingerUITests.modulemap"; sourceTree = "<group>"; };
-		18E858CBED3D41DD6A4E4DA66D0C151A /* ScrumdingerKMMLib-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "ScrumdingerKMMLib-xcframeworks.sh"; sourceTree = "<group>"; };
 		23AFE7AFEC68018A6DFCC33A6069C048 /* Pods-Scrumdinger-ScrumdingerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Scrumdinger-ScrumdingerUITests-Info.plist"; sourceTree = "<group>"; };
 		25AD61646804C1C52F68A7D49CE07FF7 /* Pods-Scrumdinger-ScrumdingerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Scrumdinger-ScrumdingerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		27981A76A031DAD8963F4A55FD4E1FB8 /* Pods-Scrumdinger */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Scrumdinger"; path = Pods_Scrumdinger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A10D800C42A9C6216AFE3CC9AA1D502 /* Pods-Scrumdinger-ScrumdingerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Scrumdinger-ScrumdingerUITests-dummy.m"; sourceTree = "<group>"; };
 		3F2CF7913F288A24C69E63923EBCA35C /* Pods-ScrumdingerTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ScrumdingerTests"; path = Pods_ScrumdingerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		423AC055F9D767FB464718147C8928B1 /* ScrumdingerKMMLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrumdingerKMMLib.debug.xcconfig; sourceTree = "<group>"; };
 		45FA686E36E1F6EA1BCF1F02C41D1B0E /* Pods-Scrumdinger-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Scrumdinger-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4C9A96EA0D74269D2AE2A3251C0702FC /* Pods-Scrumdinger-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Scrumdinger-dummy.m"; sourceTree = "<group>"; };
 		59DCA23D5EFF9CB1208CDA4D1D660BBB /* Pods-Scrumdinger-ScrumdingerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Scrumdinger-ScrumdingerUITests-umbrella.h"; sourceTree = "<group>"; };
-		60C7ABF4BC6E2B189F82AFA0AB83AF91 /* ScrumdingerKMMLib.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = ScrumdingerKMMLib.xcframework; sourceTree = "<group>"; };
 		62B766557F723C8F9546689DE5323138 /* Pods-Scrumdinger-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Scrumdinger-acknowledgements.plist"; sourceTree = "<group>"; };
 		647D580EB9E0FF92326F506E51B51134 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		720DD99436441A1ED945975EBBCE613B /* Pods-Scrumdinger-ScrumdingerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Scrumdinger-ScrumdingerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7600CF55BF4F1482F7EE1A5146A4DD21 /* Pods-Scrumdinger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scrumdinger.release.xcconfig"; sourceTree = "<group>"; };
 		7A1BC27531F317E94D74D6A1C36B63B1 /* Pods-ScrumdingerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrumdingerTests.release.xcconfig"; sourceTree = "<group>"; };
-		7CB968FD31798BF8DE0D3D2DEE3516AF /* ScrumdingerKMMLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrumdingerKMMLib.release.xcconfig; sourceTree = "<group>"; };
 		7E5A3AB48834F41345AAD73B5C8668C7 /* Pods-Scrumdinger-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Scrumdinger-Info.plist"; sourceTree = "<group>"; };
 		85E73D37E68125FF79D6A53AC8924B23 /* Pods-Scrumdinger-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Scrumdinger-umbrella.h"; sourceTree = "<group>"; };
 		8997E7EA81A55ADADB665BDFEAEFED83 /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		89A12BD79DC4786728B44CC8B2EA07E1 /* Pods-ScrumdingerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ScrumdingerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92590277818B60F347203767BFE3B9F5 /* Pods-Scrumdinger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Scrumdinger.debug.xcconfig"; sourceTree = "<group>"; };
+		95D57FBF3D7B7A8269E25210D7E96376 /* ScrumdingerKMMLib.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = ScrumdingerKMMLib.xcframework; sourceTree = "<group>"; };
 		98E14FEDEAFB6FBFF0A4E5B526C7BCDF /* Pods-ScrumdingerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ScrumdingerTests-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E29C4BE30114FAF21456718C0BB4D4E /* ScrumdingerKMMLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ScrumdingerKMMLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A06D83C754BBC1AE0E0696E9CADA474B /* Pods-ScrumdingerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrumdingerTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A9705AA8A1A3FD31F16D0E2CEC9A8E5A /* ScrumdingerKMMLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ScrumdingerKMMLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B32797309C536F51F9B1357F766C1934 /* Pods-ScrumdingerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ScrumdingerTests.modulemap"; sourceTree = "<group>"; };
 		B8B88EF663C1ACAE71D4A13CB2CFECDA /* Pods-ScrumdingerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ScrumdingerTests-umbrella.h"; sourceTree = "<group>"; };
+		CB3806023B6C2ABB3D77EDEBA4DD1BC3 /* ScrumdingerKMMLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrumdingerKMMLib.release.xcconfig; sourceTree = "<group>"; };
+		D30C5A6A593FD5E4FC913BF39A7576E8 /* ScrumdingerKMMLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ScrumdingerKMMLib.debug.xcconfig; sourceTree = "<group>"; };
 		E11F65F0D170587EBE0970D0397EDAE3 /* Pods-ScrumdingerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ScrumdingerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FA030D4E8B3E34A9F0EA13ED27C07AB7 /* Pods-Scrumdinger-ScrumdingerUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Scrumdinger-ScrumdingerUITests"; path = Pods_Scrumdinger_ScrumdingerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD659C211558149BFE9DD32FD4346C0 /* Pods-ScrumdingerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ScrumdingerTests-Info.plist"; sourceTree = "<group>"; };
@@ -120,33 +120,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		025D00637ACF35ABF6BA2D4B1D9CF636 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				60C7ABF4BC6E2B189F82AFA0AB83AF91 /* ScrumdingerKMMLib.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		08B5CD5B76FFD28C83D78C793EF6AE4C /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4FAD83BCC7FAB42FE1E38EE83BEB981C /* ScrumdingerKMMLib */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		4FAD83BCC7FAB42FE1E38EE83BEB981C /* ScrumdingerKMMLib */ = {
-			isa = PBXGroup;
-			children = (
-				025D00637ACF35ABF6BA2D4B1D9CF636 /* Frameworks */,
-				A4DC8B868A24A9828560AF49A0858FF5 /* Pod */,
-				C8F8E516FCD8390D949DA4AA525E043C /* Support Files */,
-			);
-			name = ScrumdingerKMMLib;
-			path = /Users/quipperindonesia/haqim/practices/kmm/ScrumdingerKMMLib/shared/build/cocoapods/publish/release;
-			sourceTree = "<absolute>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,12 +154,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A4DC8B868A24A9828560AF49A0858FF5 /* Pod */ = {
+		A5E710D245E81F0D5907B1C4C2F60C26 /* ScrumdingerKMMLib */ = {
 			isa = PBXGroup;
 			children = (
-				A9705AA8A1A3FD31F16D0E2CEC9A8E5A /* ScrumdingerKMMLib.podspec */,
+				E941F053FB835770249651D95F6E14AF /* Frameworks */,
+				DC561E01FCA98D56629F40090EFE0DC8 /* Pod */,
+				BAEBD0C7391AB98AAB6FB53082749918 /* Support Files */,
 			);
-			name = Pod;
+			name = ScrumdingerKMMLib;
+			path = ../../../kmm/ScrumdingerKMMLib/shared/build/cocoapods/publish/release;
 			sourceTree = "<group>";
 		};
 		B81AD15E4F47FAC6F3FD7C7E98D0694A /* Targets Support Files */ = {
@@ -197,6 +173,17 @@
 				5B0009D613C09EC22D2358B7759FBE26 /* Pods-ScrumdingerTests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BAEBD0C7391AB98AAB6FB53082749918 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F7D94AB13299124DABB1CD5A96EF139 /* ScrumdingerKMMLib-xcframeworks.sh */,
+				D30C5A6A593FD5E4FC913BF39A7576E8 /* ScrumdingerKMMLib.debug.xcconfig */,
+				CB3806023B6C2ABB3D77EDEBA4DD1BC3 /* ScrumdingerKMMLib.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../../../../../../../ios/Scrumdinger/Pods/Target Support Files/ScrumdingerKMMLib";
 			sourceTree = "<group>";
 		};
 		C37FEA1B36DB322C9F1DD050EA9C6694 /* Pods-Scrumdinger-ScrumdingerUITests */ = {
@@ -215,22 +202,11 @@
 			path = "Target Support Files/Pods-Scrumdinger-ScrumdingerUITests";
 			sourceTree = "<group>";
 		};
-		C8F8E516FCD8390D949DA4AA525E043C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				18E858CBED3D41DD6A4E4DA66D0C151A /* ScrumdingerKMMLib-xcframeworks.sh */,
-				423AC055F9D767FB464718147C8928B1 /* ScrumdingerKMMLib.debug.xcconfig */,
-				7CB968FD31798BF8DE0D3D2DEE3516AF /* ScrumdingerKMMLib.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../../../../../../ios/Scrumdinger/Pods/Target Support Files/ScrumdingerKMMLib";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				08B5CD5B76FFD28C83D78C793EF6AE4C /* Development Pods */,
+				D2A6BA1511DEAFF387AA31F3A85576B4 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				9E977B4907946A7C206CD797C8FF0AB8 /* Products */,
 				B81AD15E4F47FAC6F3FD7C7E98D0694A /* Targets Support Files */,
@@ -243,6 +219,14 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2A6BA1511DEAFF387AA31F3A85576B4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5E710D245E81F0D5907B1C4C2F60C26 /* ScrumdingerKMMLib */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D4E77D8D96477CAB82F2D963C3E943EB /* Pods-Scrumdinger */ = {
@@ -259,6 +243,22 @@
 			);
 			name = "Pods-Scrumdinger";
 			path = "Target Support Files/Pods-Scrumdinger";
+			sourceTree = "<group>";
+		};
+		DC561E01FCA98D56629F40090EFE0DC8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				9E29C4BE30114FAF21456718C0BB4D4E /* ScrumdingerKMMLib.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E941F053FB835770249651D95F6E14AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95D57FBF3D7B7A8269E25210D7E96376 /* ScrumdingerKMMLib.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,7 +512,7 @@
 		};
 		435BDCA4A51C7720E0EF54F7D4E434D4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CB968FD31798BF8DE0D3D2DEE3516AF /* ScrumdingerKMMLib.release.xcconfig */;
+			baseConfigurationReference = CB3806023B6C2ABB3D77EDEBA4DD1BC3 /* ScrumdingerKMMLib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -846,7 +846,7 @@
 		};
 		EE1242ACE6D9372B15F9844D1DB629DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 423AC055F9D767FB464718147C8928B1 /* ScrumdingerKMMLib.debug.xcconfig */;
+			baseConfigurationReference = D30C5A6A593FD5E4FC913BF39A7576E8 /* ScrumdingerKMMLib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

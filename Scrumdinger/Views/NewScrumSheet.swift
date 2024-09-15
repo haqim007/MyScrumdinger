@@ -19,12 +19,14 @@ struct NewScrumSheet: View {
             DetailEditView(scrum: $viewModel.newScrum)
                 .toolbar {
                     ToolbarItem(placement: .cancellationAction) {
-                        Button("Dismiss") {
+                        Button(
+                          Strings().get(id: SharedRes.strings().new_scrum_dismiss_btn)
+                        ) {
                             isPresentingNewScrumView = false
                         }
                     }
                     ToolbarItem(placement: .confirmationAction) {
-                        Button("Add") {
+                        Button(Strings().get(id: SharedRes.strings().new_scrum_add_btn)) {
                             isPresentingNewScrumView = false
                             viewModel.saveScrum()
                         }

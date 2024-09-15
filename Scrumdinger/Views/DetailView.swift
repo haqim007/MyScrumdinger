@@ -20,18 +20,34 @@ struct DetailView: View {
               NavigationLink{
                 MeetingView(scrum: viewModel.scrum)
               } label: {
-                  Label("Start Meeting", systemImage: "timer")
+                  Label(
+                    Strings().get(id: SharedRes.strings().start_meeting),
+                    systemImage: "timer"
+                  )
                       .font(.headline)
                       .foregroundColor(.accentColor)
               }
               HStack {
-                  Label("Length", systemImage: "clock")
+                  Label(
+                    Strings().get(id: SharedRes.strings().detail_meeting_length),
+                    systemImage: "clock"
+                  )
                   Spacer()
-                Text("\(viewModel.scrum.lengthInMinutes) minutes")
+                Text(
+                  Strings().get(
+                    id: SharedRes.strings().detail_meeting_length_minutes,
+                    args: [viewModel.scrum.lengthInMinutes]
+                  )
+                )
               }
               .accessibilityElement(children: .combine)
               HStack {
-                  Label("Theme", systemImage: "paintpalette")
+                  Label(
+                    Strings().get(
+                      id: SharedRes.strings().detail_meeting_theme
+                    ),
+                    systemImage: "paintpalette"
+                  )
                   Spacer()
                 Text(viewModel.scrum.themeString)
                       .padding(4)
@@ -41,7 +57,11 @@ struct DetailView: View {
               }
               .accessibilityElement(children: .combine)
           } header: {
-              Text("Meeting info")
+              Text(
+                Strings().get(
+                  id: SharedRes.strings().detail_meeting_meeting_info
+                )
+              )
           }
           
           Section{
@@ -49,12 +69,15 @@ struct DetailView: View {
                   Label(attendee.name, systemImage: "person")
               }
           } header: {
-              Text("Attendees")
+              Text(Strings().get(id: SharedRes.strings().detail_meeting_attendees))
           }
           
           Section{
             if viewModel.scrum.history.isEmpty{
-                  Label("No meetings yet", systemImage: "calendar.badge.exclamationmark")
+                  Label(
+                    Strings().get(id: SharedRes.strings().detail_meeting_no_meetings_yet),
+                    systemImage: "calendar.badge.exclamationmark"
+                  )
               }
             ForEach(viewModel.scrum.history) { history in
                   NavigationLink(
@@ -76,7 +99,7 @@ struct DetailView: View {
                   }
               }
           } header: {
-              Text("History")
+              Text(Strings().get(id: SharedRes.strings().detail_meeting_history))
           }
           .onReceive(viewModel.$scrum) { scrum in
             print(scrum.history)
@@ -91,7 +114,7 @@ struct DetailView: View {
           )
       }
       .toolbar {
-          Button("Edit") {
+          Button(Strings().get(id: SharedRes.strings().detail_meeting_btn_edit)) {
               isPresentingEditView = true
           }
       }
@@ -109,7 +132,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        
         NavigationStack{
           DetailView(scrumId: Int(sampleData()[0].id))
             .environment(\.isPreview, true)
@@ -135,15 +157,12 @@ extension DetailView{
                         if scrumData != nil{
                             self.scrum = scrumData!
                             self.result = .success
-                            print("loaded scrum \(scrumData)")
                         }else{
-                            print("error")
-                            self.result = .error(message: "Data not found")
+                            self.result = .error(message: Strings().get(id: SharedRes.strings().detail_meeting_error_not_found_msg))
                         }
                     }
                 } catch {
                     self.result = .error(message: error.localizedDescription)
-                    print(error.localizedDescription)
                 }
             }
         }

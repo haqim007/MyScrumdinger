@@ -2,15 +2,15 @@ PODS:
   - ScrumdingerKMMLib (1.1.0)
 
 DEPENDENCIES:
-  - ScrumdingerKMMLib (from `/Users/quipperindonesia/haqim/practices/kmm/ScrumdingerKMMLib/shared/build/cocoapods/publish/release`)
+  - ScrumdingerKMMLib (from `../../kmm/ScrumdingerKMMLib/shared/build/cocoapods/publish/release`)
 
 EXTERNAL SOURCES:
   ScrumdingerKMMLib:
-    :path: "/Users/quipperindonesia/haqim/practices/kmm/ScrumdingerKMMLib/shared/build/cocoapods/publish/release"
+    :path: "../../kmm/ScrumdingerKMMLib/shared/build/cocoapods/publish/release"
 
 SPEC CHECKSUMS:
   ScrumdingerKMMLib: 15003d69a0ad23cfefcfd035860c399c6708f594
 
-PODFILE CHECKSUM: b335635f58220abc075d465ed08aa956a7a2fd1d
+PODFILE CHECKSUM: a8652986bd14cda1dd9eb6d9a62927ab4db3b7b5
 
 COCOAPODS: 1.15.2

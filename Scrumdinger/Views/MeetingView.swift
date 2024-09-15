@@ -15,8 +15,8 @@ struct MeetingView: View {
     @StateObject var scrumTimer = ScrumTimer()
     @StateObject var speechRecognizer = SpeechRecognizer()
     @State private var isRecording = false
-    
-    private var player: AVPlayer { AVPlayer.sharedDingPlayer }
+    @State private var player: AVPlayer? = nil
+    @Environment(\.isPreview) private var isPreview: Bool
     
     var body: some View {
         ZStack {
@@ -36,6 +36,10 @@ struct MeetingView: View {
             .padding()
             .foregroundStyle(scrum.accentColor.toThemeColor)
             .onAppear {
+               
+              if !isPreview {
+                player = AVPlayer.sharedDingPlayer
+              }
                startScrum()
             }
             .onDisappear {
@@ -48,8 +52,8 @@ struct MeetingView: View {
     private func startScrum() {
         scrumTimer.reset(lengthInMinutes: Int(scrum.lengthInMinutes), attendees: scrum.attendees)
         scrumTimer.speakerChangedAction = {
-           player.seek(to: .zero)
-           player.play()
+           player?.seek(to: .zero)
+           player?.play()
         }
         
         speechRecognizer.resetTranscript()
@@ -73,6 +77,7 @@ struct MeetingView: View {
 
 #Preview {
     MeetingView(scrum: sampleData()[0])
+      .environment(\.isPreview, true)
 }
 
 
@@ -126,22 +131,21 @@ struct MeetingViewHeader: View {
             ProgressView(value: progress)
             HStack{
                 VStack(alignment: .leading) {
-                  Text(SharedRes.strings().speaker_seconds_elapsed)
-                    Text("Seconds Elapsed")
+                    Text(Strings().get(id: SharedRes.strings().speaker_seconds_elapsed))
                         .font(.caption)
                     Label("\(secondsElapsed)", systemImage: "hourglass.tophalf.fill")
                 }
                 Spacer()
                 VStack(alignment: .trailing) {
-                    Text("Seconds Remaining")
+                  Text(Strings().get(id: SharedRes.strings().speaker_seconds_remaining))
                         .font(.caption)
                     Label("\(secondsRemaining)", systemImage: "hourglass.bottomhalf.fill")
                         .labelStyle(.trailingIcon)
                 }
             }
             .accessibilityElement(children: .ignore)
-            .accessibilityLabel("Time Remaining")
-            .accessibilityValue("\(minutesRemaining) Minutes")
+            .accessibilityLabel(Strings().get(id: SharedRes.strings().speaker_time_remaining))
+            .accessibilityValue(Strings().get(id: SharedRes.strings().speaker_minutes, args: [minutesRemaining]))
             .padding([.top, .horizontal])
         }
     }
@@ -161,22 +165,22 @@ struct MeetingViewFooter: View {
     }
     
     private var speakerText: String {
-        guard let speakerNumber = speakerNumber else { return "No more speakers" }
-        return "Speaker \(speakerNumber) of \(speakers.count)"
+        guard let speakerNumber = speakerNumber else { return Strings().get(id: SharedRes.strings().no_more_speaker) }
+        return Strings().get(id: SharedRes.strings().speaker_queue, args: [speakerNumber, speakers.count])
     }
     
     var body: some View {
         VStack {
             HStack{
                 if isLastSpeaker {
-                    Text("Last Speaker")
+                    Text(Strings().get(id: SharedRes.strings().last_speaker))
                 } else {
                     Text("\(speakerText)")
                     Spacer()
                     Button(action: skipAction){
                         Image(systemName: "forward.fill")
                     }
-                    .accessibilityLabel("Next speaker")
+                    .accessibilityLabel(Strings().get(id: SharedRes.strings().next_speaker))
                 }
             }
         }

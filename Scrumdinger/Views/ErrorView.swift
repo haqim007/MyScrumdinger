@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ScrumdingerKMMLib
 
 
 struct ErrorView: View {
@@ -15,7 +16,9 @@ struct ErrorView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("An error has occurred!")
+                Text(
+                  Strings().get(id: SharedRes.strings().error_general_msg)
+                )
                     .font(.title)
                     .padding(.bottom)
                 Text(errorWrapper.error.localizedDescription)
@@ -30,7 +33,9 @@ struct ErrorView: View {
             .cornerRadius(16)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Dismiss") {
+                    Button(
+                      Strings().get(id: SharedRes.strings().error_dismiss_btn)
+                    ) {
                         dismiss()
                     }
                 }

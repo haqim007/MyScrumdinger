@@ -8,7 +8,7 @@
 import SwiftUI
 import ScrumdingerKMMLib
 
-struct CardView: View {
+struct MeetingCardView: View {
     let scrum: DailyScrum
     var body: some View {
         VStack(alignment: .leading) {
@@ -18,10 +18,17 @@ struct CardView: View {
             Spacer()
             HStack{
                 Label("\(scrum.attendees.count)", systemImage: "person.3")
-                    .accessibilityLabel("\(scrum.attendees.count) attendees")
+                    .accessibilityLabel(
+                      Strings().get(id: SharedRes.strings().meeting_card_accessibility_total_attendees, args: [scrum.attendees.count])
+                    )
                 Spacer()
                 Label("\(scrum.lengthInMinutes)", systemImage: "clock")
-                    .accessibilityLabel("\(scrum.lengthInMinutes) minute meeting")
+                    .accessibilityLabel(
+                      Strings().get(
+                        id: SharedRes.strings().accessibility_meeting_duration_minutes,
+                        args: [scrum.lengthInMinutes]
+                      )
+                    )
                     .padding(.trailing, 20)
                     .labelStyle(.trailingIcon)
             }
@@ -35,7 +42,7 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var scrum = DailyScrum.companion.sampleData[1]
     static var previews: some View {
-        CardView(scrum: scrum)
+        MeetingCardView(scrum: scrum)
         .background(scrum.themeString.toThemeColor)
             .previewLayout(.fixed(width: 400, height: 60))
     }

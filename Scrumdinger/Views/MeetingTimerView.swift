@@ -12,11 +12,11 @@ import ScrumdingerKMMLib
 struct MeetingTimerView: View {
     let speakers: [Speaker]
     let isRecording: Bool
-    let theme: Color
-    let accentColor: Color
+    let theme: SColor
+    let accentColor: SColor
     
     private var currentSpeaker: String {
-        speakers.first(where: { !$0.isCompleted })?.name ?? "Someone"
+      speakers.first(where: { !$0.isCompleted })?.name ?? Strings().get(id: SharedRes.strings().meeting_timer_someone)
     }
     
     var body: some View {
@@ -26,11 +26,25 @@ struct MeetingTimerView: View {
                 VStack {
                     Text(currentSpeaker)
                         .font(.title)
-                    Text("is speaking")
+                    Text(Strings().get(id: SharedRes.strings().meeting_timer_is_speaking))
                     Image(systemName: isRecording ? "mic" : "mic.slash")
                         .font(.title)
                         .padding(.top)
-                        .accessibilityLabel(isRecording ? "with transcription" : "without transcription")
+                        .accessibilityLabel(
+                          isRecording ?
+                          Strings()
+                            .get(
+                              id: SharedRes
+                                .strings()
+                                .meeting_timer_accessibility_with_transcription
+                            ) :
+                            Strings()
+                            .get(
+                              id:SharedRes
+                                .strings()
+                                .meeting_timer_accessibility_without_transcription
+                            )
+                        )
                 }
                 .accessibilityElement(children: .combine)
                 .foregroundStyle(accentColor)

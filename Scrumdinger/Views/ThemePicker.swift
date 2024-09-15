@@ -15,10 +15,12 @@ struct ThemePicker: View {
     @State private var selectionState: Theme = Theme.yellow
     
     var body: some View {
-        Picker("Theme", selection: $selectionState) {
+        Picker(
+          Strings().get(id: SharedRes.strings().theme_picker_label),
+          selection: $selectionState) {
             ForEach(Theme.allCases , id: \.self) { theme in
-                ThemeView(theme: theme)
-                   .tag(theme)
+              ThemeView(theme: theme)
+                .tag(theme)
             }
         }
         .pickerStyle(.navigationLink)
@@ -43,6 +45,6 @@ struct ThemePicker: View {
 
 struct ThemePicker_Previews: PreviewProvider {
     static var previews: some View {
-        ThemePicker(selection: .constant(.periwinkle))
+      ThemePicker(selection: .constant(Theme.periwinkle))
     }
 }

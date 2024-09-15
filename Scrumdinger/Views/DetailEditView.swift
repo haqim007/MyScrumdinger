@@ -12,14 +12,19 @@ struct DetailEditView: View {
     @Binding var scrum: DailyScrum
     @State private var newAttendeeName = ""
     @State private var lengthInMinutesAsDouble = 0.0
+  
+  
     
     var body: some View {
         Form {
             Section{
-                TextField("Title", text: $scrum.title)
+                TextField(
+                  Strings().get(id: SharedRes.strings().detail_edit_title_field_label),
+                  text: $scrum.title
+                )
                 HStack {
                     Slider(value: $lengthInMinutesAsDouble, in: 5...30, step: 1) {
-                        Text("Length")
+                        Text(Strings().get(id: SharedRes.strings().detail_edit_slide_meeting_length))
                     }
                     .onAppear{
                         lengthInMinutesAsDouble = scrum.lengthInMinutesAsDouble
@@ -27,14 +32,24 @@ struct DetailEditView: View {
                     .onChange(of: lengthInMinutesAsDouble){old, new in
                         scrum.lengthInMinutesAsDouble = new
                     }
-                    .accessibilityValue("\(Int(lengthInMinutesAsDouble)) minutes")
+                    .accessibilityValue(
+                      Strings().get(
+                        id: SharedRes.strings().detail_edit_accessibility_length_minutes,
+                        args: [Int(lengthInMinutesAsDouble)]
+                      )
+                    )
                     Spacer()
-                    Text("\(Int(lengthInMinutesAsDouble)) minutes")
+                    Text(
+                      Strings().get(
+                        id: SharedRes.strings().detail_edit_length_minutes,
+                        args: [Int(lengthInMinutesAsDouble)]
+                      )
+                    )
                         .accessibilityHidden(true)
                 }
-                ThemePicker(selection: $scrum.theme)
+              ThemePicker(selection: $scrum.theme)
             } header: {
-                Text("Meeting info")
+                Text(Strings().get(id: SharedRes.strings().detail_edit_meeting_info))
             }
             
             Section{
@@ -46,7 +61,10 @@ struct DetailEditView: View {
                 }
                 
                 HStack {
-                    TextField("New Attendee", text: $newAttendeeName)
+                    TextField(
+                      Strings().get(id: SharedRes.strings().detail_edit_new_attendee_field_label),
+                      text: $newAttendeeName
+                    )
                     Button(action: {
                         withAnimation {
                             let attendee = DailyScrum.Attendee(
@@ -58,12 +76,19 @@ struct DetailEditView: View {
                         }
                     }) {
                         Image(systemName: "plus.circle.fill")
-                            .accessibilityLabel("Add attendee")
+                            .accessibilityLabel(
+                              Strings()
+                                .get(
+                                  id:SharedRes
+                                    .strings()
+                                    .detail_edit_accessibility_add_attendee_btn
+                                )
+                            )
                     }
                     .disabled(newAttendeeName.isEmpty)
                 }
             } header: {
-                Text("Attendees")
+                Text(Strings().get(id:SharedRes.strings().detail_edit_attendees))
             }
         }
     }

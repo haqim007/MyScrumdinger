@@ -20,4 +20,6 @@ extension DailyScrum{
             history: []
         )
     }
+  
+    
 }

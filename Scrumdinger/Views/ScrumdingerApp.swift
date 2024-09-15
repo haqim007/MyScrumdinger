@@ -8,6 +8,8 @@
 import SwiftUI
 import ScrumdingerKMMLib
 
+typealias SColor = SwiftUI.Color
+
 @main
 struct ScrumdingerApp: App {
     init() {

@@ -18,14 +18,16 @@ struct ScrumsView: View {
     var body: some View {
         NavigationStack{
             listView()
-            .navigationTitle("Daily Scrums")
+            .navigationTitle(Strings().get(id: SharedRes.strings().scrums_daily_scrums))
             .toolbar{
                 Button(action: {
                     isPresentingNewScrumView = true
                 }){
                     Image(systemName: "plus")
                 }
-                .accessibilityLabel("Add new scrum")
+                .accessibilityLabel(
+                  Strings().get(id: SharedRes.strings().scrums_accessibility_add_new_scrum)
+                )
             }
         }
         .sheet(isPresented: $isPresentingNewScrumView) {
@@ -45,14 +47,16 @@ struct ScrumsView: View {
               NavigationLink(destination: {
                   DetailView(scrumId: Int(scrum.id))
               }){
-                  CardView(scrum: scrum)
+                  MeetingCardView(scrum: scrum)
               }
               .listRowBackground(scrum.themeString.toThemeColor)
           }
         case .error(let message):
           Text(message).multilineTextAlignment(.center)
         default:
-          Text("Loading...").multilineTextAlignment(.center)
+          Text(
+            Strings().get(id: SharedRes.strings().scrums_loading)
+          ).multilineTextAlignment(.center)
         }
     }
 }

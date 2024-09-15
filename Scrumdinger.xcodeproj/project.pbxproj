@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A6665DA09C6575DF7160CF1 /* Pods_ScrumdingerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AB28E77CC575D1A76AF032 /* Pods_ScrumdingerTests.framework */; };
-		2DD2BE4B93A31321FD4E955E /* Pods_Scrumdinger_ScrumdingerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E6D1A338D365C937C6C0F96 /* Pods_Scrumdinger_ScrumdingerUITests.framework */; };
+		66D0BAA0BEE92073794FB3DF /* Pods_ScrumdingerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50499D05BE26ADE03A296060 /* Pods_ScrumdingerTests.framework */; };
 		7C1BEB942C87FD7700145790 /* Views+Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1BEB932C87FD7700145790 /* Views+Env.swift */; };
 		7C92CF222C72DA18008FDC16 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C92CF212C72DA18008FDC16 /* Resource.swift */; };
 		7CB1D6C02C8814EB007A587C /* Dummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB1D6BF2C8814EB007A587C /* Dummy.swift */; };
@@ -24,6 +23,8 @@
 		7CD4034D2C621FAF00AF69E9 /* SpeakerArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD4034C2C621FAF00AF69E9 /* SpeakerArc.swift */; };
 		7CD4034F2C6222BA00AF69E9 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD4034E2C6222BA00AF69E9 /* SpeechRecognizer.swift */; };
 		7CD403512C62241100AF69E9 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD403502C62241100AF69E9 /* HistoryView.swift */; };
+		7CD6EE992C92A48E001E210D /* MokoResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6EE982C92A48E001E210D /* MokoResource.swift */; };
+		7CD6EE9B2C96B3CC001E210D /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD6EE9A2C96B3CC001E210D /* HelloView.swift */; };
 		7CD7CA252C65AB0C00E6C5C0 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD7CA242C65AB0C00E6C5C0 /* AVPlayer+Ding.swift */; };
 		7CD7CA2C2C65AB5700E6C5C0 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7CD7CA2B2C65AB5700E6C5C0 /* ding.wav */; };
 		7CE3F20A2C60CCA8009D3748 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2092C60CCA8009D3748 /* ScrumdingerApp.swift */; };
@@ -35,7 +36,7 @@
 		7CE3F2272C60CCA9009D3748 /* ScrumdingerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2262C60CCA9009D3748 /* ScrumdingerUITestsLaunchTests.swift */; };
 		7CE3F2352C61AB90009D3748 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2342C61AB90009D3748 /* Theme.swift */; };
 		7CE3F2372C61ABE0009D3748 /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2362C61ABE0009D3748 /* DailyScrum.swift */; };
-		7CE3F2392C61B430009D3748 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2382C61B430009D3748 /* CardView.swift */; };
+		7CE3F2392C61B430009D3748 /* MeetingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2382C61B430009D3748 /* MeetingCardView.swift */; };
 		7CE3F23B2C61BCD0009D3748 /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F23A2C61BCD0009D3748 /* TrailingIconLabelStyle.swift */; };
 		7CE3F23D2C61C310009D3748 /* ScrumsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F23C2C61C310009D3748 /* ScrumsView.swift */; };
 		7CE3F23F2C61C59C009D3748 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F23E2C61C59C009D3748 /* DetailView.swift */; };
@@ -43,7 +44,8 @@
 		7CE3F2442C61D6F1009D3748 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2432C61D6F1009D3748 /* ThemeView.swift */; };
 		7CE3F2462C61D79A009D3748 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE3F2452C61D79A009D3748 /* ThemePicker.swift */; };
 		7CEBAFE92C8760F1004AA198 /* NSArray+Scrumdinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEBAFE82C8760F1004AA198 /* NSArray+Scrumdinger.swift */; };
-		BACA2F89788AAF5B96D62B86 /* Pods_Scrumdinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB2C3142B601E5948960B84 /* Pods_Scrumdinger.framework */; };
+		B999C7083E6FE208B95693DF /* Pods_Scrumdinger_ScrumdingerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0CF73447BB154C42031AC5 /* Pods_Scrumdinger_ScrumdingerUITests.framework */; };
+		C390BABAA89D33D664E9EEDB /* Pods_Scrumdinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8961355B70C00AE827281C /* Pods_Scrumdinger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D48B83F7CA9E982D9756A67 /* Pods-ScrumdingerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumdingerTests.release.xcconfig"; path = "Target Support Files/Pods-ScrumdingerTests/Pods-ScrumdingerTests.release.xcconfig"; sourceTree = "<group>"; };
-		1DB2C3142B601E5948960B84 /* Pods_Scrumdinger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scrumdinger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2555A88197BE68154CB96492 /* Pods-Scrumdinger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger.debug.xcconfig"; path = "Target Support Files/Pods-Scrumdinger/Pods-Scrumdinger.debug.xcconfig"; sourceTree = "<group>"; };
-		5E6D1A338D365C937C6C0F96 /* Pods_Scrumdinger_ScrumdingerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scrumdinger_ScrumdingerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		72403ACA7C90439D4D2188F5 /* Pods-ScrumdingerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumdingerTests.debug.xcconfig"; path = "Target Support Files/Pods-ScrumdingerTests/Pods-ScrumdingerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		784F93C17BC660681781BB23 /* Pods-Scrumdinger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger.release.xcconfig"; path = "Target Support Files/Pods-Scrumdinger/Pods-Scrumdinger.release.xcconfig"; sourceTree = "<group>"; };
+		0E8961355B70C00AE827281C /* Pods_Scrumdinger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scrumdinger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AB5DE3E7C6FE45245DD177F /* Pods-ScrumdingerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumdingerTests.debug.xcconfig"; path = "Target Support Files/Pods-ScrumdingerTests/Pods-ScrumdingerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		50499D05BE26ADE03A296060 /* Pods_ScrumdingerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrumdingerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC220B7A3D3FA8CA46063B3 /* Pods-Scrumdinger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger.release.xcconfig"; path = "Target Support Files/Pods-Scrumdinger/Pods-Scrumdinger.release.xcconfig"; sourceTree = "<group>"; };
 		7C18E4272C8D638E00EC7C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7C1BEB932C87FD7700145790 /* Views+Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Views+Env.swift"; sourceTree = "<group>"; };
 		7C92CF212C72DA18008FDC16 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
@@ -86,6 +86,8 @@
 		7CD4034C2C621FAF00AF69E9 /* SpeakerArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerArc.swift; sourceTree = "<group>"; };
 		7CD4034E2C6222BA00AF69E9 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 		7CD403502C62241100AF69E9 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		7CD6EE982C92A48E001E210D /* MokoResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MokoResource.swift; sourceTree = "<group>"; };
+		7CD6EE9A2C96B3CC001E210D /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
 		7CD7CA242C65AB0C00E6C5C0 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		7CD7CA2B2C65AB5700E6C5C0 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
 		7CE3F2062C60CCA8009D3748 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,7 +102,7 @@
 		7CE3F2262C60CCA9009D3748 /* ScrumdingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumdingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7CE3F2342C61AB90009D3748 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7CE3F2362C61ABE0009D3748 /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
-		7CE3F2382C61B430009D3748 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7CE3F2382C61B430009D3748 /* MeetingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingCardView.swift; sourceTree = "<group>"; };
 		7CE3F23A2C61BCD0009D3748 /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 		7CE3F23C2C61C310009D3748 /* ScrumsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumsView.swift; sourceTree = "<group>"; };
 		7CE3F23E2C61C59C009D3748 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -108,9 +110,11 @@
 		7CE3F2432C61D6F1009D3748 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		7CE3F2452C61D79A009D3748 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
 		7CEBAFE82C8760F1004AA198 /* NSArray+Scrumdinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSArray+Scrumdinger.swift"; sourceTree = "<group>"; };
-		941258EF64D65050389CB878 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig"; path = "Target Support Files/Pods-Scrumdinger-ScrumdingerUITests/Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F5AB28E77CC575D1A76AF032 /* Pods_ScrumdingerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScrumdingerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA4381453138E12DDCBFCEE0 /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scrumdinger-ScrumdingerUITests/Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DCF7326640A12D2670FA385 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig"; path = "Target Support Files/Pods-Scrumdinger-ScrumdingerUITests/Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B24842FA841D2C465DE224C2 /* Pods-Scrumdinger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger.debug.xcconfig"; path = "Target Support Files/Pods-Scrumdinger/Pods-Scrumdinger.debug.xcconfig"; sourceTree = "<group>"; };
+		BA0CF73447BB154C42031AC5 /* Pods_Scrumdinger_ScrumdingerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scrumdinger_ScrumdingerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6EA57DC58ED66A583F8037 /* Pods-ScrumdingerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScrumdingerTests.release.xcconfig"; path = "Target Support Files/Pods-ScrumdingerTests/Pods-ScrumdingerTests.release.xcconfig"; sourceTree = "<group>"; };
+		DE24A148888A5D9C19FAB28D /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig"; path = "Target Support Files/Pods-Scrumdinger-ScrumdingerUITests/Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BACA2F89788AAF5B96D62B86 /* Pods_Scrumdinger.framework in Frameworks */,
+				C390BABAA89D33D664E9EEDB /* Pods_Scrumdinger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6665DA09C6575DF7160CF1 /* Pods_ScrumdingerTests.framework in Frameworks */,
+				66D0BAA0BEE92073794FB3DF /* Pods_ScrumdingerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,13 +138,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DD2BE4B93A31321FD4E955E /* Pods_Scrumdinger_ScrumdingerUITests.framework in Frameworks */,
+				B999C7083E6FE208B95693DF /* Pods_Scrumdinger_ScrumdingerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FBB2C14955587FAC7B438B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E8961355B70C00AE827281C /* Pods_Scrumdinger.framework */,
+				BA0CF73447BB154C42031AC5 /* Pods_Scrumdinger_ScrumdingerUITests.framework */,
+				50499D05BE26ADE03A296060 /* Pods_ScrumdingerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C1BEB922C87FD6900145790 /* util */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +169,14 @@
 				7C92CF212C72DA18008FDC16 /* Resource.swift */,
 			);
 			path = Mechanism;
+			sourceTree = "<group>";
+		};
+		7CD6EE972C92A46F001E210D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7CD6EE982C92A48E001E210D /* MokoResource.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7CD7CA2A2C65AB4E00E6C5C0 /* Resources */ = {
@@ -173,7 +195,7 @@
 				7CE3F2232C60CCA9009D3748 /* ScrumdingerUITests */,
 				7CE3F2072C60CCA8009D3748 /* Products */,
 				EAF3EF36A250584840D93B68 /* Pods */,
-				F8BA8FD66A4481113B6B7F40 /* Frameworks */,
+				1FBB2C14955587FAC7B438B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +212,7 @@
 		7CE3F2082C60CCA8009D3748 /* Scrumdinger */ = {
 			isa = PBXGroup;
 			children = (
+				7CD6EE972C92A46F001E210D /* Extensions */,
 				7C18E4272C8D638E00EC7C41 /* Info.plist */,
 				7CD7CA2A2C65AB4E00E6C5C0 /* Resources */,
 				7C92CF202C72DA07008FDC16 /* Mechanism */,
@@ -252,7 +275,7 @@
 				7CE3F23A2C61BCD0009D3748 /* TrailingIconLabelStyle.swift */,
 				7CE3F2092C60CCA8009D3748 /* ScrumdingerApp.swift */,
 				7CE3F20B2C60CCA8009D3748 /* MeetingView.swift */,
-				7CE3F2382C61B430009D3748 /* CardView.swift */,
+				7CE3F2382C61B430009D3748 /* MeetingCardView.swift */,
 				7CE3F23E2C61C59C009D3748 /* DetailView.swift */,
 				7CE3F23C2C61C310009D3748 /* ScrumsView.swift */,
 				7CE3F2432C61D6F1009D3748 /* ThemeView.swift */,
@@ -263,6 +286,7 @@
 				7CD4034A2C621F5400AF69E9 /* MeetingTimerView.swift */,
 				7CD403502C62241100AF69E9 /* HistoryView.swift */,
 				7CE3F2402C61C95D009D3748 /* DetailEditView.swift */,
+				7CD6EE9A2C96B3CC001E210D /* HelloView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -270,24 +294,14 @@
 		EAF3EF36A250584840D93B68 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2555A88197BE68154CB96492 /* Pods-Scrumdinger.debug.xcconfig */,
-				784F93C17BC660681781BB23 /* Pods-Scrumdinger.release.xcconfig */,
-				FA4381453138E12DDCBFCEE0 /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */,
-				941258EF64D65050389CB878 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */,
-				72403ACA7C90439D4D2188F5 /* Pods-ScrumdingerTests.debug.xcconfig */,
-				1D48B83F7CA9E982D9756A67 /* Pods-ScrumdingerTests.release.xcconfig */,
+				B24842FA841D2C465DE224C2 /* Pods-Scrumdinger.debug.xcconfig */,
+				5EC220B7A3D3FA8CA46063B3 /* Pods-Scrumdinger.release.xcconfig */,
+				DE24A148888A5D9C19FAB28D /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */,
+				8DCF7326640A12D2670FA385 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */,
+				4AB5DE3E7C6FE45245DD177F /* Pods-ScrumdingerTests.debug.xcconfig */,
+				BC6EA57DC58ED66A583F8037 /* Pods-ScrumdingerTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		F8BA8FD66A4481113B6B7F40 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1DB2C3142B601E5948960B84 /* Pods_Scrumdinger.framework */,
-				5E6D1A338D365C937C6C0F96 /* Pods_Scrumdinger_ScrumdingerUITests.framework */,
-				F5AB28E77CC575D1A76AF032 /* Pods_ScrumdingerTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,10 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CE3F22A2C60CCA9009D3748 /* Build configuration list for PBXNativeTarget "Scrumdinger" */;
 			buildPhases = (
-				8D3C46C802189A7F254D97E0 /* [CP] Check Pods Manifest.lock */,
+				27D58FDFA0AADD04B0CB8DB6 /* [CP] Check Pods Manifest.lock */,
 				7CE3F2022C60CCA8009D3748 /* Sources */,
 				7CE3F2032C60CCA8009D3748 /* Frameworks */,
 				7CE3F2042C60CCA8009D3748 /* Resources */,
+				7C6FD0A92C8F22C9000DFB6B /* MokoResource Static Run Script */,
 			);
 			buildRules = (
 			);
@@ -315,7 +330,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CE3F22D2C60CCA9009D3748 /* Build configuration list for PBXNativeTarget "ScrumdingerTests" */;
 			buildPhases = (
-				664A32044ABF62FDD81F5362 /* [CP] Check Pods Manifest.lock */,
+				CED0778075EA49123E809227 /* [CP] Check Pods Manifest.lock */,
 				7CE3F2122C60CCA9009D3748 /* Sources */,
 				7CE3F2132C60CCA9009D3748 /* Frameworks */,
 				7CE3F2142C60CCA9009D3748 /* Resources */,
@@ -334,7 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CE3F2302C60CCA9009D3748 /* Build configuration list for PBXNativeTarget "ScrumdingerUITests" */;
 			buildPhases = (
-				59260B4E7540BEFC637AAB96 /* [CP] Check Pods Manifest.lock */,
+				CD7AA061673654140231826A /* [CP] Check Pods Manifest.lock */,
 				7CE3F21C2C60CCA9009D3748 /* Sources */,
 				7CE3F21D2C60CCA9009D3748 /* Frameworks */,
 				7CE3F21E2C60CCA9009D3748 /* Resources */,
@@ -420,51 +435,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		59260B4E7540BEFC637AAB96 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Scrumdinger-ScrumdingerUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		664A32044ABF62FDD81F5362 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ScrumdingerTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D3C46C802189A7F254D97E0 /* [CP] Check Pods Manifest.lock */ = {
+		27D58FDFA0AADD04B0CB8DB6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -486,6 +457,68 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7C6FD0A92C8F22C9000DFB6B /* MokoResource Static Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "MokoResource Static Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/../../kmm/ScrumdingerKMMLib/gradlew\" -p \"$SRCROOT/../../kmm/ScrumdingerKMMLib/\" :shared:copyPodFrameworkResourcesToApp \\\n    -Pmoko.resources.BUILT_PRODUCTS_DIR=\"$BUILT_PRODUCTS_DIR\" \\\n    -Pmoko.resources.CONTENTS_FOLDER_PATH=\"$CONTENTS_FOLDER_PATH\" \\\n    -Pkotlin.native.cocoapods.platform=\"$PLATFORM_NAME\" \\\n    -Pkotlin.native.cocoapods.archs=\"$ARCHS\" \\\n    -Pkotlin.native.cocoapods.configuration=\"$CONFIGURATION\"\n";
+		};
+		CD7AA061673654140231826A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scrumdinger-ScrumdingerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CED0778075EA49123E809227 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScrumdingerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -496,6 +529,7 @@
 				7CD403452C620FCA00AF69E9 /* ScrumStore.swift in Sources */,
 				7CE3F2462C61D79A009D3748 /* ThemePicker.swift in Sources */,
 				7CD4034B2C621F5400AF69E9 /* MeetingTimerView.swift in Sources */,
+				7CD6EE9B2C96B3CC001E210D /* HelloView.swift in Sources */,
 				7CD403492C62134300AF69E9 /* ErrorView.swift in Sources */,
 				7CE3F2372C61ABE0009D3748 /* DailyScrum.swift in Sources */,
 				7CD0E1442C6EDA6700300FE4 /* Date+Scrumdinger.swift in Sources */,
@@ -518,7 +552,8 @@
 				7CB1D6C02C8814EB007A587C /* Dummy.swift in Sources */,
 				7CE3F20A2C60CCA8009D3748 /* ScrumdingerApp.swift in Sources */,
 				7CE3F2442C61D6F1009D3748 /* ThemeView.swift in Sources */,
-				7CE3F2392C61B430009D3748 /* CardView.swift in Sources */,
+				7CD6EE992C92A48E001E210D /* MokoResource.swift in Sources */,
+				7CE3F2392C61B430009D3748 /* MeetingCardView.swift in Sources */,
 				7CD4033F2C6204AC00AF69E9 /* NewScrumSheet.swift in Sources */,
 				7CD403412C62050500AF69E9 /* EditScrumSheet.swift in Sources */,
 			);
@@ -678,7 +713,7 @@
 		};
 		7CE3F22B2C60CCA9009D3748 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2555A88197BE68154CB96492 /* Pods-Scrumdinger.debug.xcconfig */;
+			baseConfigurationReference = B24842FA841D2C465DE224C2 /* Pods-Scrumdinger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -687,6 +722,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				DEVELOPMENT_TEAM = K2H8KG8Z32;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
@@ -719,7 +755,7 @@
 		};
 		7CE3F22C2C60CCA9009D3748 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 784F93C17BC660681781BB23 /* Pods-Scrumdinger.release.xcconfig */;
+			baseConfigurationReference = 5EC220B7A3D3FA8CA46063B3 /* Pods-Scrumdinger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -728,6 +764,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Scrumdinger/Preview Content\"";
 				DEVELOPMENT_TEAM = K2H8KG8Z32;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Scrumdinger/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
@@ -760,7 +797,7 @@
 		};
 		7CE3F22E2C60CCA9009D3748 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72403ACA7C90439D4D2188F5 /* Pods-ScrumdingerTests.debug.xcconfig */;
+			baseConfigurationReference = 4AB5DE3E7C6FE45245DD177F /* Pods-ScrumdingerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -781,7 +818,7 @@
 		};
 		7CE3F22F2C60CCA9009D3748 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D48B83F7CA9E982D9756A67 /* Pods-ScrumdingerTests.release.xcconfig */;
+			baseConfigurationReference = BC6EA57DC58ED66A583F8037 /* Pods-ScrumdingerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -802,7 +839,7 @@
 		};
 		7CE3F2312C60CCA9009D3748 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA4381453138E12DDCBFCEE0 /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */;
+			baseConfigurationReference = DE24A148888A5D9C19FAB28D /* Pods-Scrumdinger-ScrumdingerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -829,7 +866,7 @@
 		};
 		7CE3F2322C60CCA9009D3748 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 941258EF64D65050389CB878 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */;
+			baseConfigurationReference = 8DCF7326640A12D2670FA385 /* Pods-Scrumdinger-ScrumdingerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
